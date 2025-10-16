@@ -44,3 +44,8 @@ import re
 text = "IphoneAndroidMacNvidiaIntel"
 result = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
 print(result)
+#task10
+def camel_to_snake(s):
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', s)
+    return s.lower()
+print(camel_to_snake("CamelCaseExample"))
